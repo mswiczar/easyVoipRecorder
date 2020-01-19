@@ -1,0 +1,541 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_VOIPRECORDER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Hide",                        ID_FILE_HIDE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "DashBoard",                   ID_VIEW_PLAYLIST
+        MENUITEM SEPARATOR
+        POPUP "Opacity"
+        BEGIN
+            MENUITEM "Opaque",                      ID_OPACITY_OPAQUE
+            MENUITEM "90 %",                        ID_OPACITY_90
+            MENUITEM "70 %",                        ID_OPACITY_70
+            MENUITEM "50 %",                        ID_OPACITY_50
+            MENUITEM "30 %",                        ID_OPACITY_30
+            MENUITEM "10%",                         ID_OPACITY_10
+        END
+    END
+    POPUP "&Command"
+    BEGIN
+        MENUITEM "&Record",                     ID_COMMAND_RECORD
+        MENUITEM "&Pause",                      ID_COMMAND_PAUSE
+        MENUITEM "&Stop",                       ID_COMMAND_STOP
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Recording Options",           ID_TOOLS_RECOPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Autostart Recording",         ID_COMMAND_AUTOSTARTRECORDING
+        MENUITEM SEPARATOR
+        MENUITEM "Show DashBoard when record finish", ID_TOOLS_PLAYLIST
+        MENUITEM SEPARATOR
+        MENUITEM "Configure Recording Devices (USB)", ID_TOOLS_CONFIGURERECORDINGDEVICES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help Topics",                 ID_HELP_HELPTOPICS
+        MENUITEM SEPARATOR
+        MENUITEM "Insert Registration Code (Remove Time Limit)", ID_HELP_REGISTER
+        MENUITEM SEPARATOR
+        MENUITEM "Insert Sharing Plan Registration Code (Enable Upload Feature)", ID_TOOLS_UPLOADSOPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&About easyVoipRecorder",     IDM_ABOUT
+    END
+END
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Show easyVoipRecorder",       ID_MENU_SHOW
+        MENUITEM "Show DashBoard",              ID_MENU_PLAYLIST
+        POPUP "Goto"
+        BEGIN
+            MENUITEM "Recordings Folder",           ID_RIGHTMENU_GOTOFOLDER
+            MENUITEM "Export Folder",               ID_RIGHTMENU_GOTOEXFOLDER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Configure Recording Devices (USB)", ID_MENU_RECORDINGDEVICES
+        MENUITEM SEPARATOR
+        MENUITEM "Buy easyVoipRecorder",        ID_MENU_BUY
+        MENUITEM "Insert Registration Code",    ID_MENU_REGISTRATIONCODE
+        MENUITEM "Insert Sharing Plan Code",    ID_TOOLS_UPLOADSOPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Run at Startup",              ID_RUNATSTARTUP, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Help",                        ID_MENU_HELP
+        MENUITEM "About easyVoipRecorder",      ID_MENU_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_MENU_EXIT
+    END
+END
+
+IDR_MENU_PLAYLIST MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        POPUP "Export to..."
+        BEGIN
+            MENUITEM "WAV",                         ID_EXPORTTO_WAV
+            MENUITEM "Ogg",                         ID_EXPORTTO_OGG
+            MENUITEM "MP3",                         ID_EXPORTTO_MP3
+            MENUITEM "Speex",                       ID_EXPORTTO_SPEEX
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Convert to Mono",             ID_FILE_CONVERTTOMONO
+        MENUITEM "Upload Conversation",         ID_FILE_UPLOADCONVERSATION
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "With Audacity",               ID_EDIT_WITHAUDACITY
+        MENUITEM SEPARATOR
+        MENUITEM "Delete Conversation",         ID_EDIT_DELETERECOR
+        MENUITEM SEPARATOR
+        MENUITEM "Edit Conversation Fields",    ID_EDIT_EDITCONVERSATION
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Link Tag  (Sharing Plan)",    ID_VIEW_URLTOSHARE
+        MENUITEM "Object Tag (Sharing Plan)",   ID_VIEW_OBJECTTAG
+    END
+    POPUP "PlayBack"
+    BEGIN
+        MENUITEM "Play",                        ID_PLAYBACK_PLAY
+    END
+    POPUP "Browse"
+    BEGIN
+        MENUITEM "Recordings Folder",           ID_RIGHTMENU_GOTOFOLDER
+        MENUITEM "Export Folder",               ID_RIGHTMENU_GOTOEXFOLDER
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Online Help",                 ID_HELP_ONLINEHELP
+        MENUITEM "About easyVoipRecorder",      ID_HELP_ABOUTEASYVOIPRECORDER
+    END
+END
+
+IDR_MENU_LIST MENU 
+BEGIN
+    POPUP "RightMenu"
+    BEGIN
+        MENUITEM "Play",                        ID_PLAYBACK_PLAY
+        POPUP "Edit"
+        BEGIN
+            MENUITEM "Conversation Fields",         ID_EDIT_EDITCONVERSATION
+            MENUITEM "With Audacity",               ID_EDIT_WITHAUDACITY
+        END
+        POPUP "Export to..."
+        BEGIN
+            MENUITEM "Wav",                         ID_EXPORTTO_WAV
+            MENUITEM "Ogg",                         ID_EXPORTTO_OGG
+            MENUITEM "MP3",                         ID_EXPORTTO_MP3
+            MENUITEM "Speex",                       ID_EXPORTTO_SPEEX
+        END
+        MENUITEM "Goto Recordings Folder",      ID_RIGHTMENU_GOTOFOLDER
+        MENUITEM "Goto Export Folder",          ID_RIGHTMENU_GOTOEXFOLDER
+        MENUITEM SEPARATOR
+        POPUP "Sharing Plan Tags"
+        BEGIN
+            MENUITEM "View Link Tag",               ID_VIEW_URLTOSHARE
+            MENUITEM "View Object Tag",             ID_VIEW_OBJECTTAG
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Upload Conversation (Sharing Plan)", ID_FILE_UPLOADCONVERSATION
+        MENUITEM SEPARATOR
+        MENUITEM "Convert to Mono",             ID_FILE_CONVERTTOMONO
+        MENUITEM SEPARATOR
+        MENUITEM "Delete Conversation",         ID_EDIT_DELETERECOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_VOIPRECORDER ACCELERATORS 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "R",            ID_COMMAND_RECORD,      VIRTKEY, ALT, NOINVERT
+    "P",            ID_COMMAND_PAUSE,       VIRTKEY, ALT, NOINVERT
+    "S",            ID_COMMAND_STOP,        VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VOIPRECORDER_DIALOG DIALOGEX 22, 17, 178, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About easyVoipRecorder"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,132,174,46,15,WS_GROUP
+    GROUPBOX        "Supported Voip Softphones",IDC_STATIC,4,68,173,103
+    LISTBOX         IDC_LIST_VOIPPHONES,6,79,166,87,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,4,0,171,65
+    LTEXT           "http://www.easyvoiprecorder.com",IDC_STATIC_WEB,39,36,123,8,SS_NOPREFIX | SS_NOTIFY
+    CTEXT           "Registered Version",IDC_STATIC_VER,10,11,160,8,SS_NOPREFIX | WS_TABSTOP
+    LTEXT           "sales@easyvoiprecorder.com",IDC_STATIC_EMAIL,39,48,113,14,SS_NOPREFIX | SS_NOTIFY
+    CTEXT           "Copyright (C) 2011",IDC_STATIC,9,21,160,8
+    CTEXT           "URL:",IDC_STATIC,15,36,23,8
+    CTEXT           "Email:",IDC_STATIC,16,48,23,14
+END
+
+IDD_REGISTRATIONFORM DIALOGEX 0, 0, 204, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "easyVoipRecorder Registration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,49,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,15,49,50,14
+    EDITTEXT        IDC_EDIT_REG,82,7,112,13,ES_AUTOHSCROLL
+    LTEXT           "Registration Code",IDC_STATIC,15,9,65,12
+    LTEXT           "Registration Email",IDC_STATIC,16,27,59,12
+    EDITTEXT        IDC_EDIT_EMAIL,81,24,112,13,ES_AUTOHSCROLL
+END
+
+IDD_PLAYLIST DIALOGEX 0, 0, 386, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+CAPTION "easyVoipRecorder DashBoard"
+MENU IDR_MENU_PLAYLIST
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_NOLABELWRAP | LVS_ALIGNLEFT | WS_BORDER,4,57,377,116
+    CONTROL         "",IDC_DATETIMEPICKER_FROM,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,4,14,93,12
+    CONTROL         "",IDC_DATETIMEPICKER_TO,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,108,14,78,12
+    COMBOBOX        IDC_COMBO_SOURCE,196,14,89,53,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Date from:",IDC_STATIC,4,3,58,8
+    LTEXT           "Date to:",IDC_STATIC,110,3,59,8
+    LTEXT           "Source",IDC_STATIC,199,3,42,8
+    PUSHBUTTON      "Search",IDC_SEARCH,329,42,50,14,BS_NOTIFY
+    LTEXT           "Comments",IDC_STATIC,4,31,58,8
+    EDITTEXT        IDC_EDIT_COMMENTS,4,41,316,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SELECTED,4,176,325,12,ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Destination",IDC_STATIC,299,3,42,8
+    COMBOBOX        IDC_COMBO_DESTINATION,295,14,86,53,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Play",ID_PLAYBACK_PLAY,334,175,47,13
+END
+
+IDD_DIALOG_RECORDING DIALOGEX 0, 0, 211, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "easyVoipRecorder Recording Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,155,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,90,76,57,14
+    GROUPBOX        "",IDC_STATIC,7,7,198,66
+    LTEXT           "Recording Quality",IDC_STATIC,12,17,57,14
+    LTEXT           "Encoding Quality",IDC_STATIC,12,53,53,11
+    COMBOBOX        IDC_COMBO_FORMAT,73,34,121,57,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Output format",IDC_STATIC,12,36,55,14
+    COMBOBOX        IDC_COMBO_BITRATE,73,53,121,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_KHZ,73,16,121,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_UPLOAD DIALOGEX 0, 0, 218, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "easyVoipRecorder Uploading Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,159,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,60,50,14
+    EDITTEXT        IDC_EDIT_IP,80,36,117,14,ES_AUTOHSCROLL
+    LTEXT           "UserName",IDC_STATIC,7,59,44,11,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_TRANSFER,79,13,121,56,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Upload  Method",IDC_STATIC,21,14,55,14
+    EDITTEXT        IDC_EDIT_PASS,65,64,17,14,ES_PASSWORD | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    GROUPBOX        "",IDC_STATIC,7,7,206,23
+    GROUPBOX        "",IDC_STATIC,7,29,206,27
+    LTEXT           "Serial Code",IDC_STATIC,21,39,51,14
+    LTEXT           "Password",IDC_STATIC,7,67,44,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_USERNAME,65,56,14,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+END
+
+IDD_DIALOG_EDIT_CONV DIALOGEX 0, 0, 235, 98
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Destination and Comments"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,178,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,78,50,14
+    LTEXT           "Destination:",IDC_STATIC,7,7,42,11
+    EDITTEXT        IDC_EDIT_DESTINATION,53,7,175,12,ES_AUTOHSCROLL
+    LTEXT           "Comments:",IDC_STATIC,7,22,43,11
+    EDITTEXT        IDC_EDIT_COMMENT,53,23,175,49,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_LINK DIALOGEX 0, 0, 361, 90
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EasyVoiprecorder Tag"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,304,70,50,14
+    EDITTEXT        IDC_EDIT_LINK,7,21,347,46,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Copy this code and add it  into your's Web page or email message",IDC_STATIC,7,7,225,14
+    DEFPUSHBUTTON   "Copy",IDLINK,243,70,50,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+4001                    BITMAP                  "Bitmaps\\stop_over.bmp"
+1001                    BITMAP                  "Bitmaps\\default.bmp"
+3000                    BITMAP                  "Bitmaps\\pause_on.bmp"
+3001                    BITMAP                  "Bitmaps\\pause_over.bmp"
+5000                    BITMAP                  "Bitmaps\\rec_on.bmp"
+5001                    BITMAP                  "Bitmaps\\rec_over.bmp"
+4000                    BITMAP                  "Bitmaps\\stop_on.bmp"
+100                     BITMAP                  "Bitmaps\\panel.bmp"
+101                     BITMAP                  "Bitmaps\\gauge.bmp"
+99                      BITMAP                  "Bitmaps\\label.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VOIPRECORDER_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 38
+        VERTGUIDE, 45
+        BOTTOMMARGIN, 189
+        HORZGUIDE, 44
+        HORZGUIDE, 58
+        HORZGUIDE, 68
+    END
+
+    IDD_REGISTRATIONFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        VERTGUIDE, 15
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 57
+        HORZGUIDE, 49
+    END
+
+    IDD_PLAYLIST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 385
+        VERTGUIDE, 4
+        VERTGUIDE, 74
+        VERTGUIDE, 82
+        VERTGUIDE, 147
+        VERTGUIDE, 153
+        VERTGUIDE, 225
+        VERTGUIDE, 232
+        VERTGUIDE, 295
+        VERTGUIDE, 303
+        VERTGUIDE, 381
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 188
+        HORZGUIDE, 20
+        HORZGUIDE, 31
+        HORZGUIDE, 57
+        HORZGUIDE, 67
+        HORZGUIDE, 188
+    END
+
+    IDD_DIALOG_RECORDING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 12
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_UPLOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        HORZGUIDE, 20
+    END
+
+    IDD_DIALOG_EDIT_CONV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_DIALOG_LINK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 354
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "easyVoipRecorder"
+    IDS_URL2                "http://www.easyVoipRecorder.com"
+    IDC_VOIPRECORDER        "easyVoipRecorder"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Argentina) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESS)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_ARGENTINA
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_USB DIALOGEX 0, 0, 391, 171
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Devices Configuration Screen (USB , Bluetooth)"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,334,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,145,50,14
+    GROUPBOX        "Help",IDC_STATIC,7,86,377,48
+    COMBOBOX        IDC_COMBO_SPEAKER,78,40,305,88,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Speaker Device",IDC_STATIC,8,41,50,11
+    LTEXT           "Microphone Device",IDC_STATIC,8,14,63,11
+    COMBOBOX        IDC_COMBO_MIC,77,12,307,84,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "If you have any USB Headset or Bluetooth Device, you need to configure it in this screen. Just select your current Voip Device in the combo  in order to get the easyVoipRecorder works fine. \nIf you dont have any of this devices just left it as default.",IDC_STATIC,15,99,361,32
+    LTEXT           "Recording HZ",IDC_STATIC,10,67,50,11
+    EDITTEXT        IDC_HZ,79,66,85,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "(48000 or 44100 or 22050 or 11025 or 16000 or 24000 or 8000)",IDC_STATIC,169,68,213,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_USB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        VERTGUIDE, 140
+        VERTGUIDE, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Argentina) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

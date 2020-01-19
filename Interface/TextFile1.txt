@@ -1,0 +1,356 @@
+probar vista ( ver el servicio con vista)
+
+terminar
+	skype (hacer parche para xp por ahora) parece que listo
+	
+probar
+	firefly
+	x-lite
+	vonage
+	yahoo
+
+hacer 
+	msn
+
+
+mandar mensaje de recording
+fijarse si hay usb, y ver que pasa.-
+
+
+
+
+
+
+no hacer
+hacer ecualizador
+autocypher.
+spymode
+hacer upload ftp.
+terminar configuracion ftp.
+terminar configuracion upload.
+
+
+done
+playlist fix 1000 registros y demas yerbas de memoria
+registration code.
+php and patching csm
+
+pantallas help.
+recording configurations.
+khz
+bitrate.
+determinar los khz de grabacion.
+sincronizar ambos canales.
+comprimir a ogg en tiempo real.
+
+probar win2000  (ver el tema del player)
+playlist funcionalidad
+terminar upload easyvoiprecorder.
+investigar los filtros, para ogg, y speex.
+hacer upload
+embellecer
+mover el archivo a la carpeta de destino
+agregar a la lista cuando termina de gravar como wav o lo que sea. refresh si esta la lista.
+cuando apreta record, fijarse si esta activo, sino preguntar y sino mandar el mensaje.
+Poner waiting until the conversation is reached. ponerle un timeout.
+
+Export 2 mp3
+Export 2 vorbis ogg
+Export 2 speex
+Export 2 wma
+
+listo
+	gtalk
+	voipstunts
+	voipbuster
+	voipcheap
+	12voip
+
+
+///*****************************************************************************************************************************************
+///*****************************************************************************************************************************************
+///*************************************************   discard                                  *********************************************************
+///*****************************************************************************************************************************************
+///*****************************************************************************************************************************************
+
+/*
+int Beginmain(unsigned long can , WCHAR* Filenamein, WCHAR* Filenameout , DWORD comp);
+*/
+
+
+int Beginmain(unsigned long can , WCHAR* Filenamein, WCHAR* Filenameout , DWORD comp)
+{
+  ogg_stream_state os; /* take physical pages, weld into a logical
+			  stream of packets */
+  ogg_page         og; /* one Ogg bitstream page.  Vorbis packets are inside */
+  ogg_packet       op; /* one raw packet of data for decode */
+  
+  vorbis_info      vi; /* struct that stores all the static vorbis bitstream
+			  settings */
+  vorbis_comment   vc; /* struct that stores all the user comments */
+
+  vorbis_dsp_state vd; /* central working state for the packet->PCM decoder */
+  vorbis_block     vb; /* local working space for packet->PCM decode */
+
+  int eos=0,ret;
+  int i, founddata;
+
+  FILE *astdin; 
+  FILE *astdout;
+
+  astdin =    _wfopen(Filenamein,L"rb");
+  astdout =   _wfopen(Filenameout,L"wb");
+
+
+  vorbis_info_init(&vi);
+
+  /* choose an encoding mode.  A few possibilities commented out, one
+     actually used: */
+
+  /*********************************************************************
+   Encoding using a VBR quality mode.  The usable range is -.1
+   (lowest quality, smallest file) to 1. (highest quality, largest file).
+   
+   Example quality mode .4: 44kHz stereo coupled, roughly 128kbps VBR 
+   ret = vorbis_encode_init_vbr(&vi,2,44100,.4);
+   ---------------------------------------------------------------------
+
+   Encoding using an average bitrate mode (ABR).
+   example: 44kHz stereo coupled, average 128kbps VBR 
+  
+   ret = vorbis_encode_init(&vi,2,44100,-1,128000,-1);
+
+   ---------------------------------------------------------------------
+
+   Encode using a qulity mode, but select that quality mode by asking for
+   an approximate bitrate.  This is not ABR, it is true VBR, but selected
+   using the bitrate interface, and then turning bitrate management off:
+
+   ret = ( vorbis_encode_setup_managed(&vi,2,44100,-1,128000,-1) ||
+           vorbis_encode_ctl(&vi,OV_ECTL_RATEMANAGE_AVG,NULL) ||
+           vorbis_encode_setup_init(&vi));
+
+   *********************************************************************/
+  //ret = vorbis_encode_init(&vi,2,48000,-1,22050,-1);
+//  ret = vorbis_encode_init(&vi,2,48000,-1,16384,-1);
+   
+  ret = vorbis_encode_init_vbr(&vi,2,can,(comp / 100));
+
+  if(ret)exit(1);
+
+  /* add a comment */
+  vorbis_comment_init(&vc);
+  vorbis_comment_add_tag(&vc,"comment","This File Was Recorded using EasyVoipRecorder, Please visit http://www.easyvoiprecorder.com");
+
+  /* set up the analysis state and auxiliary encoding storage */
+  vorbis_analysis_init(&vd,&vi);
+  vorbis_block_init(&vd,&vb);
+  
+  srand(time(NULL));
+  ogg_stream_init(&os,rand());
+
+  /* Vorbis streams begin with three headers; the initial header (with
+     most of the codec setup parameters) which is mandated by the Ogg
+     bitstream spec.  The second header holds any comment fields.  The
+     third header holds the bitstream codebook.  We merely need to
+     make the headers, then pass them to libvorbis one at a time;
+     libvorbis handles the additional Ogg bitstream constraints */
+  {
+    ogg_packet header;
+    ogg_packet header_comm;
+    ogg_packet header_code;
+
+    vorbis_analysis_headerout(&vd,&vc,&header,&header_comm,&header_code);
+    ogg_stream_packetin(&os,&header); /* automatically placed in its own
+					 page */
+    ogg_stream_packetin(&os,&header_comm);
+    ogg_stream_packetin(&os,&header_code);
+
+	/* This ensures the actual
+	 * audio data will start on a new page, as per spec
+	 */
+	while(!eos)
+	{
+		int result=ogg_stream_flush(&os,&og);
+		if(result==0)break;
+		fwrite(og.header,1,og.header_len,astdout);
+		fwrite(og.body,1,og.body_len,astdout);
+	}
+
+  }
+ 
+  // aca hay que hacer el procedimiento
+
+  
+  DWORD total_read=0;
+  while(!eos)
+  {
+    long i;
+    long bytes=fread(readbuffer,1,READ*4,astdin); /* stereo hardwired here */
+	total_read = total_read + bytes;
+    if(bytes==0)
+	{
+      /* end of file.  this can be done implicitly in the mainline,
+         but it's easier to see here in non-clever fashion.
+         Tell the library we're at end of stream so that it can handle
+         the last frame and mark end of stream in the output properly */
+      vorbis_analysis_wrote(&vd,0);
+	}
+	else
+	{
+      /* data to encode */
+
+      /* expose the buffer to submit data */
+      float **buffer=vorbis_analysis_buffer(&vd,READ);
+      
+      /* uninterleave samples */
+      for(i=0;i<bytes/4;i++)
+	  {
+		buffer[0][i]=((readbuffer[i*4+1]<<8)|
+				(0x00ff&(int)readbuffer[i*4]))/32768.f;
+		buffer[1][i]=((readbuffer[i*4+3]<<8)|
+				(0x00ff&(int)readbuffer[i*4+2]))/32768.f;
+      }
+      /* tell the library how much we actually submitted */
+      vorbis_analysis_wrote(&vd,i);
+    }
+
+    /* 
+		vorbis does some data preanalysis, then divvies up blocks for
+        more involved (potentially parallel) processing.  Get a single
+        block for encoding now 
+	*/
+
+    while(vorbis_analysis_blockout(&vd,&vb)==1)
+	{
+      /* analysis, assume we want to use bitrate management */
+      vorbis_analysis(&vb,NULL);
+      vorbis_bitrate_addblock(&vb);
+
+      while(vorbis_bitrate_flushpacket(&vd,&op))
+	  {
+		/* weld the packet into the bitstream */
+		ogg_stream_packetin(&os,&op);
+		/* write out pages (if any) */
+		while(!eos)
+		{
+			int result=ogg_stream_pageout(&os,&og);
+			if(result==0)break;
+			fwrite(og.header,1,og.header_len,astdout);
+			fwrite(og.body,1,og.body_len,astdout);
+			/* this could be set above, but for illustrative purposes, I do
+			it here (to show that vorbis does know where the stream ends) */
+			if(ogg_page_eos(&og))eos=1;
+		}
+     }
+    }
+  }
+
+
+
+  /* clean up and exit.  vorbis_info_clear() must be called last */
+
+  vorbis_block_clear(&vb);
+  vorbis_dsp_clear(&vd);
+  vorbis_comment_clear(&vc);
+  vorbis_info_clear(&vi);
+  ogg_stream_clear(&os);
+
+  fclose(astdin);
+  fclose(astdout);
+  return(0);
+}
+
+
+
+
+/*
+
+	DWORD filesizeHightBytes;
+	HANDLE myfileRead1  = CreateFile(Filenamein, GENERIC_READ , 0 , NULL , OPEN_EXISTING , FILE_ATTRIBUTE_READONLY ,NULL);
+	DWORD  filesizeLowBytes1   = GetFileSize(myfileRead1,&filesizeHightBytes);
+	CloseHandle(myfileRead1);
+*/
+
+// media player in win32 console
+
+
+#include "atlbase.h"
+#include "atlwin.h"
+#include "wmp.h"
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+    CoInitialize(NULL);
+
+    HRESULT hr = S_OK;
+    CComBSTR bstrVersionInfo; // Contains the version string.
+    CComPtr<IWMPPlayer> spPlayer;  // Smart pointer to IWMPPlayer interface.
+
+    hr = spPlayer.CoCreateInstance( __uuidof(WindowsMediaPlayer), 0, CLSCTX_INPROC_SERVER );
+
+    if(SUCCEEDED(hr))
+    {
+        hr = spPlayer->get_versionInfo(&bstrVersionInfo);
+    }
+
+    if(SUCCEEDED(hr))
+    {
+        // Show the version in a message box.
+        COLE2T pStr(bstrVersionInfo);
+        MessageBox( NULL, (LPCSTR)pStr, _T("Windows Media Player Version"), MB_OK );
+    }
+
+    // Clean up.
+    spPlayer.Release();
+    CoUninitialize();
+
+    return 0;
+}
+
+To use the Windows Media Player ActiveX control (including the user interface) in a Windows-based program, you must provide an ActiveX control container. ATL provides the CAxWindow class to provide ActiveX host window functionality.
+
+To host the Windows Media Player control using the CAxWindow class, follow these steps:
+
+   1. Include the following headers:
+
+      #include "wmp.h"
+      #include <atlbase.h>
+      #include <atlcom.h>
+      #include <atlhost.h>
+      #include <atlctl.h>
+
+   2. Declare member variables, as follows:
+
+      CAxWindow  m_wndView;  // ActiveX host window class.
+      CComPtr<IWMPPlayer>  m_spWMPPlayer;  // Smart pointer to IWMPPlayer interface.
+
+   3. When your application window is created, call AtlAxWinInit, which is required when using the ATL ActiveX host window.
+
+      AtlAxWinInit();
+
+   4. Declare local variables for return codes and to contain the pointer to the host window interface:
+
+      CComPtr<IAxWinHostWindow>  spHost;
+      HRESULT  hr;
+
+   5. Create the host window:
+
+      GetClientRect(&rcClient);
+      m_wndView.Create(m_hWnd, rcClient, NULL, WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN, WS_EX_CLIENTEDGE);
+
+   6. Retrieve the host window interface pointer:
+
+      hr = m_wndView.QueryHost(&spHost);
+
+   7. Create the Windows Media Player control in the host window using the class ID:
+
+      hr = spHost->CreateControl(CComBSTR(_T("{6BF52A52-394A-11d3-B153-00C04F79FAA6}")), m_wndView, 0);
+
+   8. Retrieve the IWMPPlayer interface pointer:
+
+      hr = m_wndView.QueryControl(&m_spWMPPlayer);
+
+When you write your own code, be sure to check each HRESULT return code for errors.
+
+For a complete sample that illustrates how to host the Windows Media Player ActiveX control by using the CAxWindow class, see the WMPHost sample.

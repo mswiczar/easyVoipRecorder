@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EasyVoipRecorder_12", "VoipRecorder.vcproj", "{A608C67D-B83A-4B86-AC24-C3C9A65285BC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EasyVoipRecorderDll", "..\Dll\DllHook.vcproj", "{92FC4ADD-1FC7-42B9-AABD-F70DD3E37FAB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EasyVoipRecorderService", "..\Service\EasyRecorderService.vcproj", "{3ED90C60-5D6A-4057-B82A-CC05DCBD9E30}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A608C67D-B83A-4B86-AC24-C3C9A65285BC}.Debug.ActiveCfg = Debug|Win32
+		{A608C67D-B83A-4B86-AC24-C3C9A65285BC}.Debug.Build.0 = Debug|Win32
+		{A608C67D-B83A-4B86-AC24-C3C9A65285BC}.Release.ActiveCfg = Release|Win32
+		{A608C67D-B83A-4B86-AC24-C3C9A65285BC}.Release.Build.0 = Release|Win32
+		{92FC4ADD-1FC7-42B9-AABD-F70DD3E37FAB}.Debug.ActiveCfg = Debug|Win32
+		{92FC4ADD-1FC7-42B9-AABD-F70DD3E37FAB}.Debug.Build.0 = Debug|Win32
+		{92FC4ADD-1FC7-42B9-AABD-F70DD3E37FAB}.Release.ActiveCfg = Release|Win32
+		{92FC4ADD-1FC7-42B9-AABD-F70DD3E37FAB}.Release.Build.0 = Release|Win32
+		{3ED90C60-5D6A-4057-B82A-CC05DCBD9E30}.Debug.ActiveCfg = Debug|Win32
+		{3ED90C60-5D6A-4057-B82A-CC05DCBD9E30}.Debug.Build.0 = Debug|Win32
+		{3ED90C60-5D6A-4057-B82A-CC05DCBD9E30}.Release.ActiveCfg = Release|Win32
+		{3ED90C60-5D6A-4057-B82A-CC05DCBD9E30}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

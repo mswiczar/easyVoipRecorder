@@ -1,0 +1,61 @@
+Output folder: C:\Program Files\Xiph.Org\Ogg Codecs
+Extract: msvcr80.dll
+Extract: msvcp80.dll
+Extract: Microsoft.VC80.CRT.manifest
+Extract: xifish.ico
+Extract: libOOOgg.dll
+Extract: libOOOggSeek.dll
+Extract: libCMMLTags.dll
+Extract: libCMMLParse.dll
+Extract: vorbis.dll
+Extract: libOOTheora.dll
+Extract: libFLAC.dll
+Extract: libFLAC++.dll
+Extract: libVorbisComment.dll
+Extract: libTemporalURI.dll
+Extract: OOOggDump.exe
+Extract: OOOggStat.exe
+Extract: OOOggValidate.exe
+Extract: OOOggCommentDump.exe
+Extract: ABOUT.txt
+Extract: VERSIONS
+Extract: README
+Extract: COPYRIGHTS.rtf
+Extract: COPYRIGHTS
+Extract: AUTHORS
+Extract: HISTORY
+Extract: ChangeLog.txt
+Extract: Ogg Codecs.manifest
+Extract: dsfFLACEncoder.dll
+Extract: dsfSpeexEncoder.dll
+Extract: dsfTheoraEncoder.dll
+Extract: dsfVorbisEncoder.dll
+Extract: dsfNativeFLACSource.dll
+Extract: dsfSpeexDecoder.dll
+Extract: dsfTheoraDecoder.dll
+Extract: dsfFLACDecoder.dll
+Extract: dsfVorbisDecoder.dll
+Extract: dsfOGMDecoder.dll
+Extract: dsfOggDemux2.dll
+Extract: dsfOggMux.dll
+Extract: dsfCMMLDecoder.dll
+Extract: dsfCMMLRawSource.dll
+Extract: dsfSubtitleVMR9.dll
+Extract: dsfAnxMux.dll
+Output folder: C:\Program Files\Xiph.Org\Ogg Codecs
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfFLACEncoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfSpeexEncoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfTheoraEncoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfVorbisEncoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfNativeFLACSource.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfSpeexDecoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfTheoraDecoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfFLACDecoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfVorbisDecoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfOGMDecoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfOggDemux2.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfOggMux.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfCMMLDecoder.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfCMMLRawSource.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfSubtitleVMR9.dll
+Registering: C:\Program Files\Xiph.Org\Ogg Codecs\dsfAnxMux.dll

@@ -1,0 +1,6 @@
+LIBRARY	EasyVoipRecorder
+
+EXPORTS
+Begin
+End
+SetEventHandle

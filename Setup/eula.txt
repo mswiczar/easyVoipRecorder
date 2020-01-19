@@ -1,0 +1,272 @@
+EasyVoipRecorder  END USER LICENSE AGREEMENT.
+
+USAGE OF THIS PRODUCT MUST BE STRICTLY IN ACCORDANCE WITH THESE LICENSE TERMS: 
+
+This EULA is a legal agreement between You and EasyVoipRecorder pertaining to Your use of this Product.  Please read carefully and ensure that you agree with the terms herein.  If You do not agree, do not install the Product, and request a refund if applicable.
+
+The Product is not sold, but licensed to You.
+
+There are two Licenses available:
+
+1. Trial License.
+The Trial License allows You to use the Product on a single PC at no charge.  This usage is limited to fourteen days or with limited recording time. You may not extend the fourteen days by any means, unless expressly permitted in writing by EasyVoipRecorder.
+
+2. Full License.
+The Full License allows You to use the full Product functionality on a single PC.  This License also entitles you to to email suppor.
+
+All rights not expressly described are reserved by EasyVoipRecorder.
+
+You may install the Product on one PC.  The license is not transferable. You may not on-sell the product.  You may not reverse engineer the product in any way.
+
+
+The Product allows phone calls and VOIP calls to be recorded.  You accept full responsibility for ensuring that Your use of this, or any other facility of the Product complies with the laws applicable in your jurisdiction.
+
+All title and intellectual property rights in and to the Product are owned by EasyVoipRecorder and its suppliers.
+
+LIMITED WARRANTY
+EasyVoipRecorder warrants that the Product will perform substantially in accordance with the functionality described on the web site www.EasyVoipRecorder.com at the time of purchase. 
+EasyVoipRecorder has no responsibility for any loss of data or information saved or stored in the computer where the user installs the software.
+
+YOU AGREE THAT YOUR USE OF THE SOFTWARE IS AT YOUR OWN RISK. THE SOFTWARE IS PROVIDED TO YOU ON AN "AS IS," "WHERE IS," BASIS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, OR NON-INFRINGEMENT. EASYVOIPRECORDER  EXPLICITLY DISCLAIMS ALL LIABILITY WITH REGARD TO THE ACCURACY, CONTENT OR AVAILABILITY OF INFORMATION FOUND ON SITES THAT LINK TO OR FROM THE SOFTWARE. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE AGREEMENT. EasyVoipRecorder MAKES NO WARRANTY THAT THE SOFTWARE IS FREE OF DEFECTS OR ERRORS, OR THAT ANY RESULTS THAT MAY BE OBTAINED FROM ITS USE WILL BE RELIABLE.
+
+The foregoing exclusions may not apply in jurisdictions that do not allow the exclusion of certain implied warranties.
+
+
+COPYRIGHT.
+The Software is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. All title and copyrights in and to the Software Product are owned by EasyVoiprecorder or its suppliers.
+
+Change of user's configuration.
+This application will only work with exactly the actual configuration of the user's computer at the time of registration. If such configuration  changes willfully or unwillfuly it is the obligation of the user to contact EasyVoipRecorder in order to get the applicable version and only if such version exists, EasyVoipRecorder will send for free such version or update by email.
+
+
+
+LIMITATION OF LIABILITY.
+UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, SHALL EasyVoipRecorder OR ANY OF ITS OFFICERS, DIRECTORS, SHAREHOLDERS, EMPLOYEES, AGENTS, LICENSORS OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, THE SOFTWARE OR ANY PORTION OR FUNCTION THEREOF, EVEN IF EASYVOIPRECORDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. FURTHERMORE, YOU HEREBY DECLARE THAT YOU ARE AWARE THAT IN CERTAIN COUNTRIES AND/OR JURISDICTIONS, RECORDING OF A CONVERSATION AND/OR OF OTHER TYPE OF SOUND MAYBE FORBIDDEN AND/ OR RESTRICTED BY LOCAL LAWS. YOU HEREBY AGREE TO USE THE SOFTWARE ONLY IN ACCORDANCE TO THE LAWS  OF YOUR JURISDICTION AND THE OTHER PARTIES' JURISDICTIONS AND IN NO CASE EASYVOIPRECORDER OR ANY OF ITS OFFICERS, DIRECTORS, SHAREHOLDERS, EMPLOYEES, AGENTS, LICENSORS OR AFFILIATES BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES THAT RESULT FROM ANY OR ALL SUCH VIOLATIONS.
+
+Applicable law may not allow the limitation or exclusion of liability or incidental or consequential damages, so the above limitation may not apply to you.
+
+
+General.
+This License Agreement, as modified from time to time, sets forth the entire understanding and agreement between you and EasyVoipRecorder with respect to the Software. If any provision or provisions shall be held to be invalid, illegal, or unenforceable, the validity, legality, and enforceability of the remaining provisions shall not be in any way affected or impaired. EasyVoipRecorder shall not be liable for any delay or failure in performance under this Agreement or interruption of service resulting from acts of God, civil or military authority, war, materials provided by third parties, or any cause beyond the reasonable control of EasyVoipRecorder.
+
+Easyvoiprecorder has the right to change this agreement at anytime without prior notice to the user.
+
+
+Abbreviations and other Terms:
+“EULA”: End-User License Agreement
+“You”: The user (an individual, company, association or any other legal entity)
+“Product”: The software known as EasyVoipRecorder,  distributed with this EULA, together with associated products and services provided to You to facilitate your use of EasyVoipRecorder.
+
+Various individuals and organisations hold copyrights on portions of this
+software including Zentaro Kavanagh, Commonwealth Scientific and
+Industrial Research Organisation (CSIRO) Australia, Josh Coalson,
+Xiph.org Foundation, and Jean-Marc Valin.
+
+The full text of these copyrights and software licenses appears below.
+
+By continuing to install this software you are agreeing to abide by
+the terms and conditions set forth below.
+
+
+------------------------------------------------------------------------
+*** libvorbis
+*** libogg
+
+Copyright (c) 1994-2004 Xiph.org Foundation
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+
+- Neither the name of the Xiph.org Foundation nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+------------------------------------------------------------------------
+*** libspeex
+
+Copyright (c) 2002, 2003, 2004 Jean-Marc Valin
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+
+- Neither the name of the Xiph.org Foundation nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+
+------------------------------------------------------------------------
+*** libfishsound
+*** dsfSeeking
+
+Copyright (C) 2003, 2004 Commonwealth Scientific and Industrial Research
+  Organisation (CSIRO) Australia
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+- Neither the name of the CSIRO Australia nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE ORGANISATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+------------------------------------------------------------------------ 
+*** libCMMLTags
+*** libCMMLParse
+*** libCMMLTagsDotNET
+*** libTemporalURI
+*** libWinCMMLParse
+*** dsfCMMLDecoder
+*** dsfAnxDemux
+*** CMMLDump
+*** mod_oggchef
+
+Copyright (C) 2003-2005 Zentaro Kavanagh
+
+Copyright (C) 2003-2005 Commonwealth Scientific and Industrial Research
+  Organisation (CSIRO) Australia
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+
+- Neither the name of CSIRO Australia nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE ORGANISATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+------------------------------------------------------------------------ 
+*** dsfOggDemux
+*** dsfOggMux
+*** dsfSpeexDecoder
+*** dsfSpeexEncoder
+*** dsfVorbisDecoder
+*** dsfVorbisEncoder
+*** dsfFLACDecoder
+*** dsfFLACEncoder
+*** dsfTheoraDecoder
+*** dsfTheoraEncoder
+*** dsfAbstractAudioDecoder
+*** dsfAbstractAudioEncoder
+*** dsfAbstractVideoDecoder
+*** dsfAbstractVideoEncoder
+*** dsfSubtitleVMR9
+*** libiWrapper
+*** libilliCore
+*** libOOTheora
+*** libOOOgg
+*** libOOOggSeek
+*** libVorbisComment
+*** libVorbisCommentDotNET
+*** OOOggDump
+*** OOOggStat
+*** OOOggCommentDump
+*** CLOgg
+*** DNPlay
+*** iOCE
+
+
+Copyright (C) 2003, 2004 Zentaro Kavanagh
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+- Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+
+- Neither the name of Zentaro Kavanagh nor the names of contributors 
+  may be used to endorse or promote products derived from this software 
+  without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE ORGANISATION OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-----------------------------------------------------------------------
